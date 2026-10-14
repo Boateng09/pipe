@@ -18,6 +18,7 @@ int main(void) {
         perror("pipe");
         exit(-1);
     }
+
     pid_t ritorno_fork = fork();
     if (ritorno_fork == -1) {
         perror("fork");
